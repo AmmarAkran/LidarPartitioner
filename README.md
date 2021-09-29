@@ -7,7 +7,12 @@ We applied two algorithms to check the correctness of the partitioning and to me
 size of lidar data. These algorithms as follows:
 
 ### The Outlier Removal Filter (radius method)
-As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDAL.pdf), There are two method to remove the outliers: radius and statistical methods. Here in our experiments, we applied the radius method 
+As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDAL.pdf), There are two method to remove the outliers: radius and statistical methods. Here in our experiments, we applied the radius method. This method counts the number of adjacent points 푘푖 within radius 푟 for each point
+푝푖 in the input PointView. Then the value of each 푘푖 and
+푘푚푖푛 are compared, so that if 푘푖 < 푘푚푖푛, where 푘푚푖푛 is the
+minimum number of neighbors, it is indicated as outlier.
+
+\left\{ 
 
 ### The Simple Morphological Filter
 
