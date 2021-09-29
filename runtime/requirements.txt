@@ -1,0 +1,66 @@
+# Requirements.txt contains a list of dependencies for the Python Application #
+
+
+# For Pdal
+
+Cython 
+Shapely 
+
+# Setup modules
+gevent
+flask
+
+# Lithops
+cloudpickle
+ps-mem
+tblib
+
+# default available packages for python3
+beautifulsoup4
+httplib2
+#kafka_python
+lxml
+python-dateutil
+requests
+scrapy
+simplejson
+#virtualenv
+Twisted
+PyJWT
+
+# packages for numerics
+numpy
+scikit-learn
+scipy
+pandas
+
+# packages for image processing
+Pillow
+scikit-image
+
+# IBM specific python modules
+#ibm_db
+#cloudant
+#watson-developer-cloud
+ibm-cos-sdk
+#ibmcloudsql
+ibm-vpc
+
+# Compose Libs
+psycopg2-binary
+#pymongo
+redis
+pika == 0.13.1
+#elasticsearch
+etcd3
+
+# packages for Lidar data
+#laspy 
+
+# useful package
+
+matplotlib == 3.3.4
+pyproj == 3.0.1 
+imageio == 2.9.0 
+piexif == 1.1.3 
+geopandas == 0.9.0
