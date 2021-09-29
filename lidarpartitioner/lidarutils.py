@@ -114,9 +114,9 @@ def writer_changes_inlasfile(inF, obj_points, file, out_bucket, out_dir='',reduc
 
 
 
-def writer_lasfile(inF, obj_points, file, out_bucket, out_dir='',reduce_stream=False, is_bool = True):
+def writer_lasfile(inF, obj_points, file, out_dir='',reduce_stream=False, is_bool = True):
 
-    fname = file.split('/')[-1].split('.')[0] + '-filtered.las'
+    fname = file.split('/')[-1].split('.')[0] + '-filtered DEM.las'
     points = ~obj_points if is_bool else obj_points
     save_time = time.time()
     # print(obj_points.shape)
