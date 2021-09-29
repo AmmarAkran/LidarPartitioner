@@ -7,9 +7,8 @@ We applied two algorithms to check the correctness of the partitioning and to me
 size of lidar data. These algorithms as follows:
 
 ### The Outlier Removal Filter (radius method)
-As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDAL.pdf), There are two methods to remove the outliers: radius and statistical methods. Here in our experiments, we applied the radius method. This method counts the number of adjacent points <img src="https://render.githubusercontent.com/render/math?math=k_i"> within radius 푟 for each point
-푝푖 in the input PointView. Then the value of each 푘푖 and
-푘푚푖푛 are compared, so that if 푘푖 < 푘푚푖푛, where 푘푚푖푛 is the
+As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDAL.pdf), There are two methods to remove the outliers: radius and statistical methods. Here in our experiments, we applied the radius method. This method counts the number of adjacent points <img src="https://render.githubusercontent.com/render/math?math=k_i"> within radius <img src="https://render.githubusercontent.com/render/math?math=r"> for each point <img src="https://render.githubusercontent.com/render/math?math=p_i"> in the input PointView. Then the value of each <img src="https://render.githubusercontent.com/render/math?math=k_i"> and
+<img src="https://render.githubusercontent.com/render/math?math=k_{min}"> are compared, so that if <img src="https://render.githubusercontent.com/render/math?math=k_i < k_{min}">, where 푘푚푖푛 is the
 minimum number of neighbors, it is indicated as outlier.
 
 
