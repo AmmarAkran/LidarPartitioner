@@ -12,9 +12,9 @@ As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDA
 푘푚푖푛 are compared, so that if 푘푖 < 푘푚푖푛, where 푘푚푖푛 is the
 minimum number of neighbors, it is indicated as outlier.
 
-```math
-SE = \frac{\sigma}{\sqrt{n}}
-```
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+$e^{i \pi} = -1$
+
 
 ### The Simple Morphological Filter
 
