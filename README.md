@@ -6,8 +6,10 @@ Lidar-Partitioner is a novel tool that enables the partitioning of lidar data by
 We applied two algorithms to check the correctness of the partitioning and to measure what is the optimal partition
 size of lidar data. These algorithms as follows:
 
-### The outlier removal Filter
-As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDAL.pdf), 
+### The outlier removal Filter (radius method)
+As described in [PDAL: Point cloud Data Abstraction Library](https://pdal.io/PDAL.pdf), There are two method to remove the outliers: radius and statistical methods. Here in our experiments, we applied the radius method 
+
+### The simple morphological filter
 
 ## The resources 
 
